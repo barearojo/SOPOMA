@@ -178,21 +178,27 @@ public class CRUD extends javax.swing.JFrame {
     }//GEN-LAST:event_tablas_btnActionPerformed
 
     private void usuario_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuario_btnActionPerformed
-         USUARIOS pedido = new USUARIOS();
-         pedido.setVisible(true);
+         USUARIOS usuario = new USUARIOS();
+         usuario.setVisible(true);
          this.setVisible(false);
     }//GEN-LAST:event_usuario_btnActionPerformed
 
     private void resenas_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resenas_btnActionPerformed
-        // TODO add your handling code here:
+         RESENAS resenas = new RESENAS();
+         resenas.setVisible(true);
+         this.setVisible(false);
     }//GEN-LAST:event_resenas_btnActionPerformed
 
     private void proyectos_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_proyectos_btnActionPerformed
-        // TODO add your handling code here:
+         PROYECTOS proyectos = new PROYECTOS();
+         proyectos.setVisible(true);
+         this.setVisible(false);
     }//GEN-LAST:event_proyectos_btnActionPerformed
 
     private void equipos_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equipos_btnActionPerformed
-        // TODO add your handling code here:
+         EQUIPOS equipos = new EQUIPOS();
+         equipos.setVisible(true);
+         this.setVisible(false);
     }//GEN-LAST:event_equipos_btnActionPerformed
 
     public static void main(String args[]) {
