@@ -44,7 +44,7 @@ public class EQUIPOS extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 48)); // NOI18N
-        jLabel1.setText("USUARIOS");
+        jLabel1.setText("EQUIPOS");
 
         jLabel2.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
         jLabel2.setText("Ccliente");

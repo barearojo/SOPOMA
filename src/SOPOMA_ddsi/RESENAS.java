@@ -23,11 +23,9 @@ public class RESENAS extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         volver_btn = new javax.swing.JButton();
         cpedido_field = new javax.swing.JTextField();
-        ccliente_field = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        realizar_pedido_btn = new javax.swing.JButton();
+        votar_btn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,18 +44,15 @@ public class RESENAS extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 48)); // NOI18N
         jLabel1.setText("RESEÑAS");
 
-        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
-        jLabel2.setText("Ccliente");
-
         jLabel3.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
-        jLabel3.setText("Cpedido");
+        jLabel3.setText("ID Reseña");
 
-        realizar_pedido_btn.setBackground(new java.awt.Color(153, 153, 153));
-        realizar_pedido_btn.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
-        realizar_pedido_btn.setText("Realizar pedido");
-        realizar_pedido_btn.addActionListener(new java.awt.event.ActionListener() {
+        votar_btn.setBackground(new java.awt.Color(153, 153, 153));
+        votar_btn.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
+        votar_btn.setText("Votar Positivamente");
+        votar_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                realizar_pedido_btnActionPerformed(evt);
+                votar_btnActionPerformed(evt);
             }
         });
 
@@ -67,19 +62,21 @@ public class RESENAS extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(129, 129, 129)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 368, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cpedido_field, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(volver_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(ccliente_field, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 103, Short.MAX_VALUE))
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 368, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 349, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(188, 188, 188)
-                .addComponent(realizar_pedido_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(cpedido_field, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(42, 42, 42)
+                        .addComponent(votar_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(volver_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -88,17 +85,13 @@ public class RESENAS extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(cpedido_field, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(ccliente_field, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(realizar_pedido_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(61, 61, 61)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cpedido_field, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(votar_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 328, Short.MAX_VALUE)
                 .addComponent(volver_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(78, Short.MAX_VALUE))
+                .addGap(41, 41, 41))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -121,33 +114,9 @@ public class RESENAS extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_volver_btnActionPerformed
 
-    private void realizar_pedido_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_realizar_pedido_btnActionPerformed
-        int cpedido = Integer.parseInt(cpedido_field.getText());
-        int ccliente = Integer.parseInt(ccliente_field.getText());
+    private void votar_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_votar_btnActionPerformed
 
-        Connection conexion = con.conectar();
-        Savepoint savepoint = null;
-
-        try {
-            
-            PreparedStatement statement = conexion.prepareStatement("INSERT INTO Pedido (Cpedido, Ccliente, Fecha_Pedido) VALUES (?,?,SYSDATE)");
-
-            statement.setInt(1, cpedido);
-            statement.setInt(2, ccliente);
-
-            statement.executeUpdate();
-
-            statement.close();
-            
-            savepoint = conexion.setSavepoint("despues_de_pedido");
-
-        } catch (Exception ex) {
-            JOptionPane.showMessageDialog(null, "Fallo al comenzar un pedido : " + ex);
-        }
-
-        OPCIONES opciones = new OPCIONES(cpedido, ccliente, conexion, savepoint);
-        opciones.setVisible(true);
-    }//GEN-LAST:event_realizar_pedido_btnActionPerformed
+    }//GEN-LAST:event_votar_btnActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -185,13 +154,11 @@ public class RESENAS extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField ccliente_field;
     private javax.swing.JTextField cpedido_field;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton realizar_pedido_btn;
     private javax.swing.JButton volver_btn;
+    private javax.swing.JButton votar_btn;
     // End of variables declaration//GEN-END:variables
 }
