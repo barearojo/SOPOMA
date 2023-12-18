@@ -60,16 +60,7 @@
                   <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="resenas_Label1" min="-2" pref="239" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="volver_btn" alignment="0" min="-2" pref="125" max="-2" attributes="0"/>
                               <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                   <Component id="texto_field" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" attributes="0">
@@ -81,8 +72,8 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                                           <Group type="102" attributes="0">
-                                              <Component id="valoracion_field2" min="-2" pref="107" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+                                              <Component id="valoracion_field2" min="-2" pref="164" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                                               <Component id="poner_reseña_btn" min="-2" pref="281" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
@@ -99,7 +90,19 @@
                           </Group>
                           <EmptySpace min="18" pref="55" max="32767" attributes="0"/>
                       </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="resenas_Label1" min="-2" pref="239" max="-2" attributes="0"/>
+                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="volver_btn" min="-2" pref="125" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -131,9 +134,9 @@
                       <Component id="votar_btn1" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="eliminar_btn" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="volver_btn" min="-2" pref="50" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                  <EmptySpace pref="29" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
