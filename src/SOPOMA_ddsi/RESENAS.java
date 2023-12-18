@@ -185,7 +185,7 @@ public class RESENAS extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void volver_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volver_btnActionPerformed
-        CRUD crud = new CRUD();
+        CRUD1 crud = new CRUD1();
         crud.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_volver_btnActionPerformed
