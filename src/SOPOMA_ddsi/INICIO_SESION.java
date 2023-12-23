@@ -125,7 +125,11 @@ public class INICIO_SESION extends javax.swing.JFrame {
     }//GEN-LAST:event_iniciar_sesion_btnActionPerformed
 
     private void crear_cuenta_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crear_cuenta_btnActionPerformed
-        // TODO add your handling code here:
+        CREAR_CUENTA cuenta = new CREAR_CUENTA();
+        cuenta.setVisible(true);
+        this.setVisible(false);
+                
+// TODO add your handling code here:
     }//GEN-LAST:event_crear_cuenta_btnActionPerformed
 
     public static void main(String args[]) {
