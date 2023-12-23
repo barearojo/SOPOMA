@@ -4,6 +4,7 @@ package SOPOMA_ddsi;
 
 
 import SOPOMA_ddsi.*;
+import java.awt.Color;
 import java.sql.Connection;
 
 public class CREAR_CUENTA extends javax.swing.JFrame {
@@ -24,7 +25,7 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        crear_cuenta_btn = new javax.swing.JButton();
+        volver_btn = new javax.swing.JButton();
         username_field = new javax.swing.JTextField();
         titulo_label = new javax.swing.JLabel();
         contrasema_field = new javax.swing.JTextField();
@@ -48,18 +49,24 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 4, true));
 
-        crear_cuenta_btn.setBackground(new java.awt.Color(0, 0, 0));
-        crear_cuenta_btn.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
-        crear_cuenta_btn.setForeground(new java.awt.Color(255, 255, 255));
-        crear_cuenta_btn.setText("RECHAZAR ESTA GRAN OPORTUNIDAD");
-        crear_cuenta_btn.addMouseListener(new java.awt.event.MouseAdapter() {
+        volver_btn.setBackground(new java.awt.Color(0, 0, 0));
+        volver_btn.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
+        volver_btn.setForeground(new java.awt.Color(255, 255, 255));
+        volver_btn.setText("RECHAZAR ESTA GRAN OPORTUNIDAD");
+        volver_btn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                volver_btnMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                crear_cuenta_btnMouseEntered(evt);
+                volver_btnMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                volver_btnMouseExited(evt);
             }
         });
-        crear_cuenta_btn.addActionListener(new java.awt.event.ActionListener() {
+        volver_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                crear_cuenta_btnActionPerformed(evt);
+                volver_btnActionPerformed(evt);
             }
         });
 
@@ -185,7 +192,7 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(crear_cuenta_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 447, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(crear_cuenta_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 447, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(volver_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 447, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(135, 135, 135))))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -238,7 +245,7 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
                         .addGap(9, 9, 9)
                         .addComponent(username_field2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(crear_cuenta_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(volver_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(33, 33, 33)))
                 .addComponent(crear_cuenta_btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35))
@@ -264,9 +271,9 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void crear_cuenta_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crear_cuenta_btnActionPerformed
+    private void volver_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volver_btnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_crear_cuenta_btnActionPerformed
+    }//GEN-LAST:event_volver_btnActionPerformed
 
     private void username_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_username_fieldActionPerformed
         // TODO add your handling code here:
@@ -296,8 +303,17 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_crear_cuenta_btn1ActionPerformed
 
-    private void crear_cuenta_btnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_crear_cuenta_btnMouseEntered
-    }//GEN-LAST:event_crear_cuenta_btnMouseEntered
+    private void volver_btnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volver_btnMouseEntered
+        volver_btn.setBackground(Color.red);   
+    }//GEN-LAST:event_volver_btnMouseEntered
+
+    private void volver_btnMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volver_btnMouseExited
+        volver_btn.setBackground(Color.BLACK);   
+    }//GEN-LAST:event_volver_btnMouseExited
+
+    private void volver_btnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volver_btnMouseClicked
+        volver_btn.setBackground(Color.getHSBColor(4, 100, 41));
+    }//GEN-LAST:event_volver_btnMouseClicked
 
     
     public static void main(String args[]) {
@@ -312,7 +328,6 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField contrasema_field;
     private javax.swing.JLabel contrasena_label;
-    private javax.swing.JButton crear_cuenta_btn;
     private javax.swing.JButton crear_cuenta_btn1;
     private javax.swing.JLabel email_lable;
     private javax.swing.JLabel email_lable1;
@@ -329,5 +344,6 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
     private javax.swing.JTextField username_field3;
     private javax.swing.JTextField username_field4;
     private javax.swing.JTextField username_field5;
+    private javax.swing.JButton volver_btn;
     // End of variables declaration//GEN-END:variables
 }

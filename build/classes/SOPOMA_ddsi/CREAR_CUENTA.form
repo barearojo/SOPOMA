@@ -113,7 +113,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="1" attributes="0">
                                       <Component id="crear_cuenta_btn1" min="-2" pref="447" max="-2" attributes="0"/>
-                                      <Component id="crear_cuenta_btn" min="-2" pref="447" max="-2" attributes="0"/>
+                                      <Component id="volver_btn" min="-2" pref="447" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
                               </Group>
@@ -184,7 +184,7 @@
                           <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                           <Component id="username_field2" min="-2" pref="41" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="crear_cuenta_btn" min="-2" pref="95" max="-2" attributes="0"/>
+                          <Component id="volver_btn" min="-2" pref="95" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -195,7 +195,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="crear_cuenta_btn">
+        <Component class="javax.swing.JButton" name="volver_btn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -209,9 +209,14 @@
             <Property name="text" type="java.lang.String" value="RECHAZAR ESTA GRAN OPORTUNIDAD"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="crear_cuenta_btnMouseEntered"/>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="crear_cuenta_btnActionPerformed"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="volver_btnMouseClicked"/>
+            <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="volver_btnMouseEntered"/>
+            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="volver_btnMouseExited"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="volver_btnActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="CREAR_CUENTA_crear_cuenta_btn"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JTextField" name="username_field">
           <Events>
