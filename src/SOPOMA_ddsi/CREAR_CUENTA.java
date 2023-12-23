@@ -7,6 +7,7 @@ import SOPOMA_ddsi.*;
 import java.awt.Color;
 import java.sql.Connection;
 
+
 public class CREAR_CUENTA extends javax.swing.JFrame {
     
     Conexion con = Conexion.getInstance(); 
@@ -26,22 +27,22 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         volver_btn = new javax.swing.JButton();
-        username_field = new javax.swing.JTextField();
+        email_field = new javax.swing.JTextField();
         titulo_label = new javax.swing.JLabel();
-        contrasema_field = new javax.swing.JTextField();
-        contrasena_label = new javax.swing.JLabel();
-        email_lable = new javax.swing.JLabel();
+        nombre_field = new javax.swing.JTextField();
+        nombre_label = new javax.swing.JLabel();
+        email_label = new javax.swing.JLabel();
         jhon_china_label = new javax.swing.JLabel();
-        email_lable1 = new javax.swing.JLabel();
-        username_field1 = new javax.swing.JTextField();
-        email_lable2 = new javax.swing.JLabel();
-        username_field2 = new javax.swing.JTextField();
-        email_lable3 = new javax.swing.JLabel();
-        username_field3 = new javax.swing.JTextField();
-        email_lable4 = new javax.swing.JLabel();
-        username_field4 = new javax.swing.JTextField();
-        email_lable5 = new javax.swing.JLabel();
-        username_field5 = new javax.swing.JTextField();
+        privacidad_label = new javax.swing.JLabel();
+        privacidad_field = new javax.swing.JTextField();
+        username_label = new javax.swing.JLabel();
+        username_field = new javax.swing.JTextField();
+        contrasena_label = new javax.swing.JLabel();
+        contrasena_field = new javax.swing.JTextField();
+        apellidos_label = new javax.swing.JLabel();
+        apellidos_field = new javax.swing.JTextField();
+        telefono_label = new javax.swing.JLabel();
+        telefono_field = new javax.swing.JTextField();
         crear_cuenta_btn1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -54,9 +55,6 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
         volver_btn.setForeground(new java.awt.Color(255, 255, 255));
         volver_btn.setText("RECHAZAR ESTA GRAN OPORTUNIDAD");
         volver_btn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                volver_btnMouseClicked(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 volver_btnMouseEntered(evt);
             }
@@ -70,9 +68,9 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
             }
         });
 
-        username_field.addActionListener(new java.awt.event.ActionListener() {
+        email_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                username_fieldActionPerformed(evt);
+                email_fieldActionPerformed(evt);
             }
         });
 
@@ -81,56 +79,56 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
         titulo_label.setText("INTRODUZCA SUS DATOS PERSONALES PARA GANAR CRÉDITO SOCIAL");
         titulo_label.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        contrasena_label.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
-        contrasena_label.setText(" NOMBRE");
+        nombre_label.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
+        nombre_label.setText(" NOMBRE");
 
-        email_lable.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
-        email_lable.setText("EMAIL");
+        email_label.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
+        email_label.setText("EMAIL");
 
         jhon_china_label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/JOHN CHINA.png"))); // NOI18N
 
-        email_lable1.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
-        email_lable1.setText("PRIVACIDAD");
+        privacidad_label.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
+        privacidad_label.setText("PRIVACIDAD");
 
-        username_field1.addActionListener(new java.awt.event.ActionListener() {
+        privacidad_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                username_field1ActionPerformed(evt);
+                privacidad_fieldActionPerformed(evt);
             }
         });
 
-        email_lable2.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
-        email_lable2.setText("USERNAME");
+        username_label.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
+        username_label.setText("USERNAME");
 
-        username_field2.addActionListener(new java.awt.event.ActionListener() {
+        username_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                username_field2ActionPerformed(evt);
+                username_fieldActionPerformed(evt);
             }
         });
 
-        email_lable3.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
-        email_lable3.setText("CONTRASEÑA");
+        contrasena_label.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
+        contrasena_label.setText("CONTRASEÑA");
 
-        username_field3.addActionListener(new java.awt.event.ActionListener() {
+        contrasena_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                username_field3ActionPerformed(evt);
+                contrasena_fieldActionPerformed(evt);
             }
         });
 
-        email_lable4.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
-        email_lable4.setText("APELLIDOS");
+        apellidos_label.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
+        apellidos_label.setText("APELLIDOS");
 
-        username_field4.addActionListener(new java.awt.event.ActionListener() {
+        apellidos_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                username_field4ActionPerformed(evt);
+                apellidos_fieldActionPerformed(evt);
             }
         });
 
-        email_lable5.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
-        email_lable5.setText("TELÉFONO");
+        telefono_label.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
+        telefono_label.setText("TELÉFONO");
 
-        username_field5.addActionListener(new java.awt.event.ActionListener() {
+        telefono_field.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                username_field5ActionPerformed(evt);
+                telefono_fieldActionPerformed(evt);
             }
         });
 
@@ -138,6 +136,14 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
         crear_cuenta_btn1.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
         crear_cuenta_btn1.setForeground(new java.awt.Color(255, 255, 255));
         crear_cuenta_btn1.setText("UNIRME A LA GRAN NACIÓN DE SOPOMA");
+        crear_cuenta_btn1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                crear_cuenta_btn1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                crear_cuenta_btn1MouseExited(evt);
+            }
+        });
         crear_cuenta_btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 crear_cuenta_btn1ActionPerformed(evt);
@@ -157,37 +163,37 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(username_field, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(email_lable))
+                                    .addComponent(email_field, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(email_label))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(username_field3, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(email_lable3)))
+                                    .addComponent(contrasena_field, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(contrasena_label)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(contrasena_label)
-                                    .addComponent(contrasema_field, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(nombre_label)
+                                    .addComponent(nombre_field, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(username_field4, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(email_lable4)))
+                                    .addComponent(apellidos_field, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(apellidos_label)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(username_field1, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(email_lable1))
+                                    .addComponent(privacidad_field, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(privacidad_label))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(username_field5, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(email_lable5)))
+                                    .addComponent(telefono_field, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(telefono_label)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(293, 293, 293)
-                                .addComponent(email_lable2)))
+                                .addComponent(username_label)))
                         .addContainerGap(24, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(username_field2, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(username_field, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(190, 190, 190))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -217,33 +223,33 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(email_lable, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(email_label, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(username_field, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(email_field, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(email_lable3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(contrasena_label, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(username_field3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(contrasena_field, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addGap(18, 18, 18)
-                                        .addComponent(contrasena_label, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(nombre_label, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(contrasema_field, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(nombre_field, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(email_lable4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(apellidos_label, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(username_field4, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(apellidos_field, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(24, 24, 24)
-                                .addComponent(email_lable1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(privacidad_label, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(username_field1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(privacidad_field, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(email_lable5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(telefono_label, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(username_field5, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(telefono_field, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
-                        .addComponent(email_lable2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(username_label, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(9, 9, 9)
-                        .addComponent(username_field2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(username_field, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(volver_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(33, 33, 33)))
@@ -272,32 +278,34 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void volver_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volver_btnActionPerformed
-        // TODO add your handling code here:
+        INICIO_SESION sesion = new INICIO_SESION();
+        sesion.setVisible(true);
+        this.setVisible(false);        // TODO add your handling code here:
     }//GEN-LAST:event_volver_btnActionPerformed
+
+    private void email_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_email_fieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_email_fieldActionPerformed
+
+    private void privacidad_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_privacidad_fieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_privacidad_fieldActionPerformed
 
     private void username_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_username_fieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_username_fieldActionPerformed
 
-    private void username_field1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_username_field1ActionPerformed
+    private void contrasena_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contrasena_fieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_username_field1ActionPerformed
+    }//GEN-LAST:event_contrasena_fieldActionPerformed
 
-    private void username_field2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_username_field2ActionPerformed
+    private void apellidos_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apellidos_fieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_username_field2ActionPerformed
+    }//GEN-LAST:event_apellidos_fieldActionPerformed
 
-    private void username_field3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_username_field3ActionPerformed
+    private void telefono_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telefono_fieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_username_field3ActionPerformed
-
-    private void username_field4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_username_field4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_username_field4ActionPerformed
-
-    private void username_field5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_username_field5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_username_field5ActionPerformed
+    }//GEN-LAST:event_telefono_fieldActionPerformed
 
     private void crear_cuenta_btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crear_cuenta_btn1ActionPerformed
         // TODO add your handling code here:
@@ -311,13 +319,16 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
         volver_btn.setBackground(Color.BLACK);   
     }//GEN-LAST:event_volver_btnMouseExited
 
-    private void volver_btnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volver_btnMouseClicked
-        volver_btn.setBackground(Color.getHSBColor(4, 100, 41));
-    }//GEN-LAST:event_volver_btnMouseClicked
+    private void crear_cuenta_btn1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_crear_cuenta_btn1MouseEntered
+        crear_cuenta_btn1.setBackground(Color.GREEN);   
+    }//GEN-LAST:event_crear_cuenta_btn1MouseEntered
+
+    private void crear_cuenta_btn1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_crear_cuenta_btn1MouseExited
+        crear_cuenta_btn1.setBackground(Color.BLACK);   
+    }//GEN-LAST:event_crear_cuenta_btn1MouseExited
 
     
     public static void main(String args[]) {
-
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new CREAR_CUENTA().setVisible(true);
@@ -326,24 +337,24 @@ public class CREAR_CUENTA extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField contrasema_field;
+    private javax.swing.JTextField apellidos_field;
+    private javax.swing.JLabel apellidos_label;
+    private javax.swing.JTextField contrasena_field;
     private javax.swing.JLabel contrasena_label;
     private javax.swing.JButton crear_cuenta_btn1;
-    private javax.swing.JLabel email_lable;
-    private javax.swing.JLabel email_lable1;
-    private javax.swing.JLabel email_lable2;
-    private javax.swing.JLabel email_lable3;
-    private javax.swing.JLabel email_lable4;
-    private javax.swing.JLabel email_lable5;
+    private javax.swing.JTextField email_field;
+    private javax.swing.JLabel email_label;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel jhon_china_label;
+    private javax.swing.JTextField nombre_field;
+    private javax.swing.JLabel nombre_label;
+    private javax.swing.JTextField privacidad_field;
+    private javax.swing.JLabel privacidad_label;
+    private javax.swing.JTextField telefono_field;
+    private javax.swing.JLabel telefono_label;
     private javax.swing.JLabel titulo_label;
     private javax.swing.JTextField username_field;
-    private javax.swing.JTextField username_field1;
-    private javax.swing.JTextField username_field2;
-    private javax.swing.JTextField username_field3;
-    private javax.swing.JTextField username_field4;
-    private javax.swing.JTextField username_field5;
+    private javax.swing.JLabel username_label;
     private javax.swing.JButton volver_btn;
     // End of variables declaration//GEN-END:variables
 }

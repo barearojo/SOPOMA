@@ -82,7 +82,7 @@
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="volver_btn2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cerrar_sesion_btn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
@@ -108,7 +108,7 @@
                       <Component id="resenas_btn" alignment="3" min="-2" pref="95" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                  <Component id="volver_btn2" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="cerrar_sesion_btn" min="-2" pref="50" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -200,7 +200,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="equipos_btnActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="volver_btn2">
+        <Component class="javax.swing.JButton" name="cerrar_sesion_btn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="99" red="99" type="rgb"/>
@@ -211,7 +211,7 @@
             <Property name="text" type="java.lang.String" value="Cerrar Sesi&#xf3;n"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="volver_btn2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cerrar_sesion_btnActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

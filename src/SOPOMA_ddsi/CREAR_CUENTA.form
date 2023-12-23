@@ -65,40 +65,40 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="username_field" alignment="0" min="-2" pref="339" max="-2" attributes="0"/>
-                                      <Component id="email_lable" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="email_field" alignment="0" min="-2" pref="339" max="-2" attributes="0"/>
+                                      <Component id="email_label" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="username_field3" alignment="0" min="-2" pref="339" max="-2" attributes="0"/>
-                                      <Component id="email_lable3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="contrasena_field" alignment="0" min="-2" pref="339" max="-2" attributes="0"/>
                                       <Component id="contrasena_label" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="contrasema_field" alignment="0" min="-2" pref="339" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="username_field4" alignment="0" min="-2" pref="339" max="-2" attributes="0"/>
-                                      <Component id="email_lable4" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="username_field1" alignment="0" min="-2" pref="339" max="-2" attributes="0"/>
-                                      <Component id="email_lable1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="nombre_label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="nombre_field" alignment="0" min="-2" pref="339" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="username_field5" alignment="0" min="-2" pref="339" max="-2" attributes="0"/>
-                                      <Component id="email_lable5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="apellidos_field" alignment="0" min="-2" pref="339" max="-2" attributes="0"/>
+                                      <Component id="apellidos_label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="privacidad_field" alignment="0" min="-2" pref="339" max="-2" attributes="0"/>
+                                      <Component id="privacidad_label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="telefono_field" alignment="0" min="-2" pref="339" max="-2" attributes="0"/>
+                                      <Component id="telefono_label" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="293" max="-2" attributes="0"/>
-                                  <Component id="email_lable2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="username_label" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace pref="24" max="32767" attributes="0"/>
@@ -107,7 +107,7 @@
                           <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="username_field2" min="-2" pref="339" max="-2" attributes="0"/>
+                                  <Component id="username_field" min="-2" pref="339" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
@@ -147,42 +147,42 @@
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="1" attributes="0">
                                               <Group type="102" attributes="0">
-                                                  <Component id="email_lable" min="-2" pref="28" max="-2" attributes="0"/>
+                                                  <Component id="email_label" min="-2" pref="28" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="username_field" min="-2" pref="41" max="-2" attributes="0"/>
+                                                  <Component id="email_field" min="-2" pref="41" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" attributes="0">
-                                                  <Component id="email_lable3" min="-2" pref="28" max="-2" attributes="0"/>
+                                                  <Component id="contrasena_label" min="-2" pref="28" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="username_field3" min="-2" pref="41" max="-2" attributes="0"/>
+                                                  <Component id="contrasena_field" min="-2" pref="41" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="contrasena_label" min="-2" pref="28" max="-2" attributes="0"/>
+                                          <Component id="nombre_label" min="-2" pref="28" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="contrasema_field" min="-2" pref="41" max="-2" attributes="0"/>
+                                          <Component id="nombre_field" min="-2" pref="41" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
-                                          <Component id="email_lable4" min="-2" pref="28" max="-2" attributes="0"/>
+                                          <Component id="apellidos_label" min="-2" pref="28" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="username_field4" min="-2" pref="41" max="-2" attributes="0"/>
+                                          <Component id="apellidos_field" min="-2" pref="41" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                                  <Component id="email_lable1" min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="privacidad_label" min="-2" pref="28" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="username_field1" min="-2" pref="41" max="-2" attributes="0"/>
+                                  <Component id="privacidad_field" min="-2" pref="41" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="email_lable5" min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="telefono_label" min="-2" pref="28" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="username_field5" min="-2" pref="41" max="-2" attributes="0"/>
+                                  <Component id="telefono_field" min="-2" pref="41" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="email_lable2" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="username_label" min="-2" pref="28" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                          <Component id="username_field2" min="-2" pref="41" max="-2" attributes="0"/>
+                          <Component id="username_field" min="-2" pref="41" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="volver_btn" min="-2" pref="95" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
@@ -209,7 +209,6 @@
             <Property name="text" type="java.lang.String" value="RECHAZAR ESTA GRAN OPORTUNIDAD"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="volver_btnMouseClicked"/>
             <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="volver_btnMouseEntered"/>
             <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="volver_btnMouseExited"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="volver_btnActionPerformed"/>
@@ -218,9 +217,9 @@
             <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="CREAR_CUENTA_crear_cuenta_btn"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="username_field">
+        <Component class="javax.swing.JTextField" name="email_field">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="username_fieldActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="email_fieldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="titulo_label">
@@ -239,9 +238,9 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="contrasema_field">
+        <Component class="javax.swing.JTextField" name="nombre_field">
         </Component>
-        <Component class="javax.swing.JLabel" name="contrasena_label">
+        <Component class="javax.swing.JLabel" name="nombre_label">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Microsoft JhengHei Light" size="18" style="1"/>
@@ -249,7 +248,7 @@
             <Property name="text" type="java.lang.String" value=" NOMBRE"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="email_lable">
+        <Component class="javax.swing.JLabel" name="email_label">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Microsoft JhengHei Light" size="18" style="1"/>
@@ -264,7 +263,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="email_lable1">
+        <Component class="javax.swing.JLabel" name="privacidad_label">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Microsoft JhengHei Light" size="18" style="1"/>
@@ -272,12 +271,12 @@
             <Property name="text" type="java.lang.String" value="PRIVACIDAD"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="username_field1">
+        <Component class="javax.swing.JTextField" name="privacidad_field">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="username_field1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="privacidad_fieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="email_lable2">
+        <Component class="javax.swing.JLabel" name="username_label">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Microsoft JhengHei Light" size="18" style="1"/>
@@ -285,12 +284,12 @@
             <Property name="text" type="java.lang.String" value="USERNAME"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="username_field2">
+        <Component class="javax.swing.JTextField" name="username_field">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="username_field2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="username_fieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="email_lable3">
+        <Component class="javax.swing.JLabel" name="contrasena_label">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Microsoft JhengHei Light" size="18" style="1"/>
@@ -298,12 +297,12 @@
             <Property name="text" type="java.lang.String" value="CONTRASE&#xd1;A"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="username_field3">
+        <Component class="javax.swing.JTextField" name="contrasena_field">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="username_field3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="contrasena_fieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="email_lable4">
+        <Component class="javax.swing.JLabel" name="apellidos_label">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Microsoft JhengHei Light" size="18" style="1"/>
@@ -311,12 +310,12 @@
             <Property name="text" type="java.lang.String" value="APELLIDOS"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="username_field4">
+        <Component class="javax.swing.JTextField" name="apellidos_field">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="username_field4ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="apellidos_fieldActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="email_lable5">
+        <Component class="javax.swing.JLabel" name="telefono_label">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Microsoft JhengHei Light" size="18" style="1"/>
@@ -324,9 +323,9 @@
             <Property name="text" type="java.lang.String" value="TEL&#xc9;FONO"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="username_field5">
+        <Component class="javax.swing.JTextField" name="telefono_field">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="username_field5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="telefono_fieldActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="crear_cuenta_btn1">
@@ -343,6 +342,8 @@
             <Property name="text" type="java.lang.String" value="UNIRME A LA GRAN NACI&#xd3;N DE SOPOMA"/>
           </Properties>
           <Events>
+            <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="crear_cuenta_btn1MouseEntered"/>
+            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="crear_cuenta_btn1MouseExited"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="crear_cuenta_btn1ActionPerformed"/>
           </Events>
         </Component>

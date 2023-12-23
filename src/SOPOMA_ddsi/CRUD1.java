@@ -27,7 +27,7 @@ public class CRUD1 extends javax.swing.JFrame {
         resenas_btn = new javax.swing.JButton();
         proyectos_btn = new javax.swing.JButton();
         equipos_btn = new javax.swing.JButton();
-        volver_btn2 = new javax.swing.JButton();
+        cerrar_sesion_btn = new javax.swing.JButton();
 
         volver_btn1.setBackground(new java.awt.Color(153, 153, 153));
         volver_btn1.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
@@ -93,12 +93,12 @@ public class CRUD1 extends javax.swing.JFrame {
             }
         });
 
-        volver_btn2.setBackground(new java.awt.Color(153, 153, 153));
-        volver_btn2.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
-        volver_btn2.setText("Cerrar Sesión");
-        volver_btn2.addActionListener(new java.awt.event.ActionListener() {
+        cerrar_sesion_btn.setBackground(new java.awt.Color(153, 153, 153));
+        cerrar_sesion_btn.setFont(new java.awt.Font("Microsoft JhengHei Light", 1, 18)); // NOI18N
+        cerrar_sesion_btn.setText("Cerrar Sesión");
+        cerrar_sesion_btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                volver_btn2ActionPerformed(evt);
+                cerrar_sesion_btnActionPerformed(evt);
             }
         });
 
@@ -118,7 +118,7 @@ public class CRUD1 extends javax.swing.JFrame {
                 .addGap(74, 74, 74))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(volver_btn2)
+                .addComponent(cerrar_sesion_btn)
                 .addGap(63, 63, 63))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(258, 258, 258)
@@ -139,7 +139,7 @@ public class CRUD1 extends javax.swing.JFrame {
                     .addComponent(proyectos_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(resenas_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(45, 45, 45)
-                .addComponent(volver_btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cerrar_sesion_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35))
         );
 
@@ -195,11 +195,11 @@ public class CRUD1 extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_volver_btn1ActionPerformed
 
-    private void volver_btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volver_btn2ActionPerformed
+    private void cerrar_sesion_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrar_sesion_btnActionPerformed
         INICIO_SESION sesion = new INICIO_SESION();
         sesion.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_volver_btn2ActionPerformed
+    }//GEN-LAST:event_cerrar_sesion_btnActionPerformed
 
     public static void main(String args[]) {
 
@@ -211,6 +211,7 @@ public class CRUD1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cerrar_sesion_btn;
     private javax.swing.JButton equipos_btn;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton proyectos_btn;
@@ -218,6 +219,5 @@ public class CRUD1 extends javax.swing.JFrame {
     private javax.swing.JButton tablas_btn;
     private javax.swing.JButton usuario_btn;
     private javax.swing.JButton volver_btn1;
-    private javax.swing.JButton volver_btn2;
     // End of variables declaration//GEN-END:variables
 }
